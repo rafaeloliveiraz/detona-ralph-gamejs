@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detona Ralph - Game JS</title>
+
+    <!-- Folhas de estilo -->
+    <link rel="stylesheet" href="./src/style/main.css" />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="section">
+      <div class="topbar">
+        <div class="timer">
+          <h2>Contador</h2>
+          <p id="timeLeft">00</p>
+        </div>
+        <div class="points">
+          <h2>Pontuação</h2>
+          <p id="score">0</p>
+        </div>
+        <div class="lifes">
+          <img src="./src/images/player.png" alt="Jogador" height="40px" />
+          <p>x</p>
+          <p id="life">3</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-row">
+          <div class="square" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+        </div>
+        <div class="panel-row">
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+        </div>
+        <div class="panel-row">
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+      </div>
+      <div class="box-result hide">
+        <div>
+          <h1>Fim de jogo!</h1>
+          <p>Sua pontuação foi de <span id="scoreResult">0</span></p>
+          <button class="btn-restart" onclick="location.reload()">
+            Jogar novamente
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Scripts -->
+    <script src="./src/script/engine.js"></script>
+  </body>
+</html>

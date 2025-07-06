@@ -12,11 +12,11 @@ const state = {
     gameVelocity: 1000,
     hitPosition: 0,
     result: 0,
-    curretTime: 5,
+    curretTime: 60,
     life: 5,
   },
   action: {
-    timeId: setInterval(randomSquare, 1000),
+    timeId: setInterval(randomSquare, 500), //Ajustar a velocidade
     countDownTimerId: setInterval(countDown, 1000),
   },
 };

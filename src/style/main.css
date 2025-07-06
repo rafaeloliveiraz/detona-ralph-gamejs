@@ -27,7 +27,7 @@
 }
 
 .section {
-  background-image: url("/src/images/wall.png");
+  background-image: url("../images/wall.png");
 }
 
 .lifes {

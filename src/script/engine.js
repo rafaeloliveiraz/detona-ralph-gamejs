@@ -7,7 +7,7 @@ const state = {
     panel: document.querySelector(".panel"),
     resultScore: document.querySelector("#scoreResult"),
     life: document.querySelector("#life"),
-    resultPanel: document.querySelector(".result-panel"),
+    resultPanel: document.querySelector(".box-result"),
   },
   values: {
     gameVelocity: 1000,
